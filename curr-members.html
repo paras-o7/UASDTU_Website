@@ -1,2351 +1,2785 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home • UAS-DTU</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home • UAS-DTU</title>
 
-    <link
-      href="./public/favicon-32x32.png"
-      rel="shortcut icon"
-      type="image/png"
-    />
-    <link rel="stylesheet" href="public/materialize/css/materialize.css" />
-    <script src="public/jquery.min.js"></script>
-    <script src="public/materialize/js/materialize.js"></script>
+        <link
+            href="./public/favicon-32x32.png"
+            rel="shortcut icon"
+            type="image/png"
+        />
+        <link rel="stylesheet" href="public/materialize/css/materialize.css" />
+        <script src="public/jquery.min.js"></script>
+        <script src="public/materialize/js/materialize.js"></script>
 
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
-      rel="stylesheet"
-    />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+            rel="stylesheet"
+        />
 
-    <link href="public/aos-master/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="public/fullPage.js-master/dist/fullpage.css" />
-    <script src="public/fullPage.js-master/dist/fullpage.js"></script>
+        <link href="public/aos-master/dist/aos.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="public/fullPage.js-master/dist/fullpage.css"
+        />
+        <script src="public/fullPage.js-master/dist/fullpage.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FKKZ2KYGD0"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-FKKZ2KYGD0");
-    </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-FKKZ2KYGD0"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-FKKZ2KYGD0");
+        </script>
 
-    <style>
-      /* Loader */
-      .loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 99;
-        width: 100%;
-        height: 100%;
-        background-color: #ebebeb;
-        text-align: center;
-      }
+        <style>
+            /* Loader */
+            .loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 99;
+                width: 100%;
+                height: 100%;
+                background-color: #ebebeb;
+                text-align: center;
+            }
 
-      #fp-nav {
-        z-index: 80 !important;
-      }
+            #fp-nav {
+                z-index: 80 !important;
+            }
 
-      @media only screen and (min-width: 600px) {
-        .loader > img {
-          width: 30vw;
-          margin-top: 25vh;
-          margin-right: 7vw;
-        }
-      }
+            @media only screen and (min-width: 600px) {
+                .loader > img {
+                    width: 30vw;
+                    margin-top: 25vh;
+                    margin-right: 7vw;
+                }
+            }
 
-      @media only screen and (max-width: 600px) {
-        .loader > img {
-          width: 60vw;
-          margin-top: 25vh;
-          margin-right: 7vw;
-        }
-      }
+            @media only screen and (max-width: 600px) {
+                .loader > img {
+                    width: 60vw;
+                    margin-top: 25vh;
+                    margin-right: 7vw;
+                }
+            }
 
-      .hidden {
-        animation: fadeOut 1s;
-        animation-fill-mode: forwards;
-      }
+            .hidden {
+                animation: fadeOut 1s;
+                animation-fill-mode: forwards;
+            }
 
-      @keyframes fadeOut {
-        100% {
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
+            @keyframes fadeOut {
+                100% {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
 
-      /* Global */
-      body {
-        font-family: "Nunito Sans", sans-serif !important;
-      }
+            /* Global */
+            body {
+                font-family: "Nunito Sans", sans-serif !important;
+            }
 
-      .main-wrapper {
-        position: relative;
-      }
+            .main-wrapper {
+                position: relative;
+            }
 
-      .menu-holder {
-        position: fixed;
-        z-index: 50;
-      }
+            .menu-holder {
+                position: fixed;
+                z-index: 50;
+            }
 
-      .sidenav-overlay {
-        z-index: 0;
-      }
+            .sidenav-overlay {
+                z-index: 0;
+            }
 
-      nav {
-        color: white;
-      }
+            nav {
+                color: white;
+            }
 
-      @media only screen and (min-width: 993px) {
-        nav a.sidenav-trigger {
-          display: block;
-        }
-      }
+            @media only screen and (min-width: 993px) {
+                nav a.sidenav-trigger {
+                    display: block;
+                }
+            }
 
-      .sidenav {
-        line-height: 1rem;
-      }
+            .sidenav {
+                line-height: 1rem;
+            }
 
-      .sidenav li > a,
-      .sidenav li > a > i.material-icons {
-        color: white;
-      }
+            .sidenav li > a,
+            .sidenav li > a > i.material-icons {
+                color: white;
+            }
 
-      ::-webkit-scrollbar {
-        width: 9px;
-      }
+            ::-webkit-scrollbar {
+                width: 9px;
+            }
 
-      ::-webkit-scrollbar-track {
-        background: black;
-      }
+            ::-webkit-scrollbar-track {
+                background: black;
+            }
 
-      ::-webkit-scrollbar-thumb {
-        background: #717171;
-        border-radius: 12px;
-      }
+            ::-webkit-scrollbar-thumb {
+                background: #717171;
+                border-radius: 12px;
+            }
 
-      .nav-links a {
-        font-family: "Nunito Sans", sans-serif !important;
-        font-size: 15px !important;
-        padding: 22px 0 10px 0 !important;
-        margin: 0 15px !important;
-        line-height: 100%;
-        text-transform: uppercase;
-      }
+            .nav-links a {
+                font-family: "Nunito Sans", sans-serif !important;
+                font-size: 15px !important;
+                padding: 22px 0 10px 0 !important;
+                margin: 0 15px !important;
+                line-height: 100%;
+                text-transform: uppercase;
+            }
 
-      .nav-wrapper a:hover {
-        background-color: transparent !important;
-      }
+            .nav-wrapper a:hover {
+                background-color: transparent !important;
+            }
 
-      .un::after {
-        content: "";
-        width: 0px;
-        height: 1.5px;
-        display: block;
-        background: #fff;
-        margin-top: 4px;
-        transition: 300ms;
-      }
+            .un::after {
+                content: "";
+                width: 0px;
+                height: 1.5px;
+                display: block;
+                background: #fff;
+                margin-top: 4px;
+                transition: 300ms;
+            }
 
-      .un:hover::after {
-        width: 100%;
-      }
+            .un:hover::after {
+                width: 100%;
+            }
 
-      /* Page layout */
-      * {
-        box-sizing: border-box;
-      }
+            /* Page layout */
+            * {
+                box-sizing: border-box;
+            }
 
-      nav.transparent {
-        position: fixed !important;
-        top: 0;
-        background-color: #000000 !important;
-      }
+            nav.transparent {
+                position: fixed !important;
+                top: 0;
+                background-color: #000000 !important;
+            }
 
-      .main {
-        background-color: #eeeeee;
-        padding: 40px;
-      }
+            .main {
+                background-color: #eeeeee;
+                padding: 40px;
+            }
 
-      .outer {
-        background-color: #eeeeee;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
+            .outer {
+                background-color: #eeeeee;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
 
-      .box2 {
-        display: flex;
-        margin: 50px 0;
-        border-radius: 60px;
-        background-color: #ffffff;
-      }
+            .box2 {
+                display: flex;
+                margin: 50px 0;
+                border-radius: 60px;
+                background-color: #ffffff;
+            }
 
-      .box2 img {
-        transform: scale(1.33);
-      }
+            .box2 img {
+                transform: scale(1.33);
+            }
 
-      .box2 div {
-        padding: 10px 40px;
-      }
+            .box2 div {
+                padding: 10px 40px;
+            }
 
-      .box1 {
-        text-align: center;
-        box-sizing: border-box;
-        background-color: #ffffff;
-        margin: 80px 100px 30px 20px;
-        border-radius: 0 0 10px 10px;
-      }
+            .box1 {
+                text-align: center;
+                box-sizing: border-box;
+                background-color: #ffffff;
+                margin: 80px 100px 30px 20px;
+                border-radius: 0 0 10px 10px;
+            }
 
-      .executive {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-evenly;
-        align-items: baseline;
-      }
+            .executive {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-evenly;
+                align-items: baseline;
+            }
 
-      h3.center {
-        text-align: center;
-        text-decoration: double;
-        text-shadow: rgb(72, 146, 211) 2px 2px 2px;
-        text-decoration-color: antiquewhite;
-      }
+            h3.center {
+                text-align: center;
+                text-decoration: double;
+                text-shadow: rgb(72, 146, 211) 2px 2px 2px;
+                text-decoration-color: antiquewhite;
+            }
 
-      .blued,
-      .fa-envelope {
-        font-size: 18px;
-        margin-right: 4px;
-      }
+            .blued,
+            .fa-envelope {
+                font-size: 18px;
+                margin-right: 4px;
+            }
 
-      .fa-google {
-        color: red;
-      }
+            .fa-google {
+                color: red;
+            }
 
-      .blued {
-        color: #08f;
-      }
+            .blued {
+                color: #08f;
+            }
 
-      @media only screen and (max-width: 600px) {
-        .main {
-          padding: 30px;
-        }
+            @media only screen and (max-width: 600px) {
+                .main {
+                    padding: 30px;
+                }
 
-        .box1 {
-          width: 100% !important;
-          margin: 40px 0 20px 0;
-        }
-      }
+                .box1 {
+                    width: 100% !important;
+                    margin: 40px 0 20px 0;
+                }
+            }
 
-      /* Airframe technicians row (fixed) */
-      .team-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4vw;
-        margin-bottom: 2.5vw;
-        margin-top: 2.5vw;
-      }
+            /* Airframe technicians row (fixed) */
+            .team-row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4vw;
+                margin-bottom: 2.5vw;
+                margin-top: 2.5vw;
+            }
 
-      .team-row .box1 {
-        width: 20%;
-        min-width: 180px;
-        padding: 0 20px;
-        margin: 40px 10px 20px 10px;
-      }
+            .team-row .box1 {
+                width: 20%;
+                min-width: 180px;
+                padding: 0 20px;
+                margin: 40px 10px 20px 10px;
+            }
 
-      .team-row .ctn {
-        transform: translateY(-20%);
-      }
+            .team-row .ctn {
+                transform: translateY(-20%);
+            }
 
-      .team-row img {
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
-        object-fit: cover;
-      }
+            .team-row img {
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                border: 5px solid #ffffff;
+                object-fit: cover;
+            }
 
-      .team-row p {
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
+            .team-row p {
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
 
-      .team-row .socials i {
-        font-size: 18px;
-        margin-right: 6px;
-      }
+            .team-row .socials i {
+                font-size: 18px;
+                margin-right: 6px;
+            }
 
-      .team-row .fa-github {
-        color: black;
-      }
+            .team-row .fa-github {
+                color: black;
+            }
 
-      /* Footer */
-      .logos a > i {
-        padding-right: 0.4rem;
-      }
+            /* Footer */
+            .logos a > i {
+                padding-right: 0.4rem;
+            }
 
-      #contact .col {
-        padding-right: 2rem;
-        color: #cccccc;
-      }
+            #contact .col {
+                padding-right: 2rem;
+                color: #cccccc;
+            }
 
-      #contact .map {
-        text-align: left;
-      }
+            #contact .map {
+                text-align: left;
+            }
 
-      #contact .row {
-        margin-bottom: 0;
-      }
+            #contact .row {
+                margin-bottom: 0;
+            }
 
-      .logos a {
-        color: grey;
-      }
+            .logos a {
+                color: grey;
+            }
 
-      @media only screen and (min-width: 800px) {
-        .row #g_map {
-          padding-left: 3vw;
-          padding-right: 3vw;
-        }
-      }
-    </style>
-  </head>
+            @media only screen and (min-width: 800px) {
+                .row #g_map {
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                }
+            }
+        </style>
+    </head>
 
-  <body>
-    <!-- Loader -->
-    <div class="loader">
-      <img src="./public/l.png" alt="" />
-      <div
-        class="preloader-wrapper active"
-        style="display: block; margin: 2vh auto"
-      >
-        <div class="spinner-layer spinner-blue-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div>
-          <div class="gap-patch">
-            <div class="circle"></div>
-          </div>
-          <div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        if (loader) loader.classList.add("hidden");
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".sidenav");
-        M.Sidenav.init(elems, {});
-      });
-
-      $(document).ready(function () {
-        $(".collapsible").collapsible();
-      });
-    </script>
-
-    <div class="main-wrapper">
-      <div class="menu-holder" style="width: 100%" id="menu">
-        <nav
-          class="transparent"
-          style="
-            height: 4rem;
-            box-shadow: none;
-            background-color: #000 !important;
-          "
-        >
-          <div class="nav-wrapper">
-            <ul class="left">
-              <li>
-                <a
-                  href="#"
-                  class="sidenav-trigger"
-                  data-target="slide_out"
-                  style="padding-top: 0rem"
-                >
-                  <i
-                    class="material-icons"
-                    style="font-size: 1.5rem; color: white"
-                    >menu</i
-                  >
-                </a>
-              </li>
-            </ul>
-
-            <ul>
-              <li style="height: 5rem; width: 5rem">
-                <a
-                  href="index.html"
-                  style="
-                    height: 5rem;
-                    width: 7rem;
-                    transform: translate(0, 0.5rem);
-                  "
-                >
-                  <img
-                    src="./public/whitelogo3.png"
-                    alt=""
-                    style="margin-left: 0; height: 3rem"
-                  />
-                </a>
-              </li>
-            </ul>
-
-            <ul
-              class="hide-on-med-and-down right nav-links"
-              style="padding-right: 12rem"
+    <body>
+        <!-- Loader -->
+        <div class="loader">
+            <img src="./public/l.png" alt="" />
+            <div
+                class="preloader-wrapper active"
+                style="display: block; margin: 2vh auto"
             >
-              <li><a href="curr-members.html" class="un">Team</a></li>
-              <li><a href="dtc.html" class="un">DTC</a></li>
-              <li><a href="about.html" class="un">About Us</a></li>
-              <li><a href="achievements.html" class="un">Achievements</a></li>
-              <li><a href="contact.html" class="un">Contact Us</a></li>
-            </ul>
-          </div>
-        </nav>
-
-        <ul class="sidenav #000000 black" style="color: #eeeeee" id="slide_out">
-          <li>
-            <a href="index.html" style="width: 100%; height: 100%">
-              <img
-                src="./public/whitelogo2.png"
-                alt=""
-                style="
-                  transform: scale(2);
-                  width: 100%;
-                  height: 100%;
-                  margin-top: 36px;
-                "
-              />
-            </a>
-          </li>
-          <hr style="margin: 1rem 2.5rem 1rem 2rem" />
-          <li>
-            <a href="index.html" class="active hide-on-med-and-up"
-              ><i class="material-icons">home</i> Home</a
-            >
-          </li>
-          <li>
-            <a href="about.html"><i class="material-icons">info</i> About Us</a>
-          </li>
-          <li>
-            <a href="hangar.html"
-              ><i class="material-icons">airplanemode_active</i> Hangar</a
-            >
-          </li>
-
-          <li>
-            <ul class="collapsible" style="padding-left: 1rem">
-              <li>
-                <div class="collapsible-header">
-                  <i class="material-icons" style="margin-right: 1.8rem"
-                    >group</i
-                  >
-                  <b>Team</b>
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
                 </div>
-                <div class="collapsible-body">
-                  <ul style="background: black; padding-left: 4rem">
-                    <li><a href="mentors.html">Mentors</a></li>
-                    <li><a href="curr-members.html">Current Members</a></li>
-                    <li><a href="past-members.html">Past Members</a></li>
-                  </ul>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener("load", function () {
+                const loader = document.querySelector(".loader");
+                if (loader) loader.classList.add("hidden");
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var elems = document.querySelectorAll(".sidenav");
+                M.Sidenav.init(elems, {});
+            });
+
+            $(document).ready(function () {
+                $(".collapsible").collapsible();
+            });
+        </script>
+
+        <div class="main-wrapper">
+            <div class="menu-holder" style="width: 100%" id="menu">
+                <nav
+                    class="transparent"
+                    style="
+                        height: 4rem;
+                        box-shadow: none;
+                        background-color: #000 !important;
+                    "
+                >
+                    <div class="nav-wrapper">
+                        <ul class="left">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="sidenav-trigger"
+                                    data-target="slide_out"
+                                    style="padding-top: 0rem"
+                                >
+                                    <i
+                                        class="material-icons"
+                                        style="font-size: 1.5rem; color: white"
+                                        >menu</i
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li style="height: 5rem; width: 5rem">
+                                <a
+                                    href="index.html"
+                                    style="
+                                        height: 5rem;
+                                        width: 7rem;
+                                        transform: translate(0, 0.5rem);
+                                    "
+                                >
+                                    <img
+                                        src="./public/whitelogo3.png"
+                                        alt=""
+                                        style="margin-left: 0; height: 3rem"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul
+                            class="hide-on-med-and-down right nav-links"
+                            style="padding-right: 12rem"
+                        >
+                            <li>
+                                <a href="curr-members.html" class="un">Team</a>
+                            </li>
+                            <li><a href="dtc.html" class="un">DTC</a></li>
+                            <li>
+                                <a href="about.html" class="un">About Us</a>
+                            </li>
+                            <li>
+                                <a href="achievements.html" class="un"
+                                    >Achievements</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="un">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <ul
+                    class="sidenav #000000 black"
+                    style="color: #eeeeee"
+                    id="slide_out"
+                >
+                    <li>
+                        <a href="index.html" style="width: 100%; height: 100%">
+                            <img
+                                src="./public/whitelogo2.png"
+                                alt=""
+                                style="
+                                    transform: scale(2);
+                                    width: 100%;
+                                    height: 100%;
+                                    margin-top: 36px;
+                                "
+                            />
+                        </a>
+                    </li>
+                    <hr style="margin: 1rem 2.5rem 1rem 2rem" />
+                    <li>
+                        <a href="index.html" class="active hide-on-med-and-up"
+                            ><i class="material-icons">home</i> Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            ><i class="material-icons">info</i> About Us</a
+                        >
+                    </li>
+                    <li>
+                        <a href="hangar.html"
+                            ><i class="material-icons">airplanemode_active</i>
+                            Hangar</a
+                        >
+                    </li>
+
+                    <li>
+                        <ul class="collapsible" style="padding-left: 1rem">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i
+                                        class="material-icons"
+                                        style="margin-right: 1.8rem"
+                                        >group</i
+                                    >
+                                    <b>Team</b>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul
+                                        style="
+                                            background: black;
+                                            padding-left: 4rem;
+                                        "
+                                    >
+                                        <li>
+                                            <a href="mentors.html">Mentors</a>
+                                        </li>
+                                        <li>
+                                            <a href="curr-members.html"
+                                                >Current Members</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="past-members.html"
+                                                >Past Members</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="achievements.html"
+                            ><i class="material-icons">emoji_events</i>
+                            Achievements</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dtc.html"
+                            ><i class="material-icons">favorite</i> DTC</a
+                        >
+                    </li>
+                    <li>
+                        <a href="upcoming_events.html" class="active"
+                            ><i class="material-icons">home</i> Upcoming
+                            Events</a
+                        >
+                    </li>
+                    <li>
+                        <a href="upcoming-projects.html" class="active"
+                            ><i class="material-icons"
+                                >precision_manufacturing</i
+                            >
+                            Upcoming Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a href="solution.html" class="active"
+                            ><i class="material-icons">settings</i> Solutions</a
+                        >
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            ><i class="material-icons">email</i> Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="team-row">
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/arnav.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Arnav Joshi"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                ARNAV JOSHI
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Student Advisor
+                            </div>
+
+                            <div>
+                                <a
+                                    href="http://linkedin.com/in/arnavjoshi04"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:arnavjoshi2004@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/chirag-sehgal"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/chirag.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Chirag Sehgal"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Chirag Sehgal
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Project Manager
+                            </div>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/chirag-sehgal-515b36206/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:chiragsehgal224@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/chirag-sehgal"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/AnujJ.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Anuj"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                ANUJ
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Student Advisor
+                            </div>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/anuj-0371b31b5/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:ANUJR200850@GMAIL.COM">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/chirag-sehgal"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </li>
-            </ul>
-          </li>
 
-          <li>
-            <a href="achievements.html"
-              ><i class="material-icons">emoji_events</i> Achievements</a
+                <h3 class="center">Executive Team</h3>
+
+                <div class="team-row">
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/Aadib.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Aaditya Bhatia"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Aaditya Bhatia
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Software Head
+                            </div>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/aaditya-bhatia/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:aaditya.tec@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/aadi121205"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/elcaption.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Akshat Kaushal"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Akshat Kaushal
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Team Captain
+                            </div>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Avionics Head
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/akshat-kaushal-0535082a1/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:akshatkaushal2579@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/akshatyuvi"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/gunmay.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Gunmay Jhingran"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                GUNMAY JHINGRAN
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Vice Captain
+                            </div>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Software Head
+                            </div>
+
+                            <div>
+                                <a
+                                    href="https://in.linkedin.com/in/gunmay-jhingran-0a86672a1"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:gunmayjhingran29@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/gun29may"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/nishu.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Nishant Chandna"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Nishant Chandna
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Vice Captain
+                            </div>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Avionics Head
+                            </div>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/nishant-chandna-482881280/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a
+                                    href="mailto:nishant.chandna.social@gmail.com"
+                                >
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/NishantChandna1403"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/adityashing.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Aditya Vikram Singh"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Aditya Vikram Singh
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Airframe Head
+                            </div>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/aditya-vikram-singh-412912235/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a
+                                    href="mailto:adityavikramsingh2005@gmail.com"
+                                >
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/nil"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/Saksham Jain.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Saksham Jain"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Saksham Jain
+                            </p>
+                            <div
+                                style="
+                                    font-size: 17px;
+                                    color: #777;
+                                    margin: 4px 0 8px 0;
+                                "
+                            >
+                                Airframe Head
+                            </div>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/saksham-jain-4b875a24a/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:saksham.j3005@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/Saksham3005"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="center">Software Technicians</h3>
+
+                <div class="team-row">
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/vedant.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Vedant Krish Shanker"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Vedant Krish Shanker
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://in.linkedin.com/in/vedant-krish-shanker-9836aa245"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a
+                                    href="mailto:vedantkrishshanker_se24b03_056@dtu.ac.in"
+                                >
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/VedantK750"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/Vansh.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Vansh Dhama"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Vansh Dhama
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/vansh-dhama-38b1322b2/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+
+                                <a href="mailto:vdchords298@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/CordieCue"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/ss.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Shivam Sharma"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Shivam Sharma
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/shivam-sharma-b4423b322/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:prahladsharma378@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/JAMMERR26"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Paras Suneel Pandita.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Paras Suneel Pandita"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Paras Suneel Pandita
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:pan.paras07@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/paras-o7"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Rohan Kumar.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Rohan Kumar"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Rohan Kumar
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:s1rohankumar2608@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/rohan-2608"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Darsh Kuchhal.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Darsh Kuchhal"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Darsh Kuchhal
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/darsh-kuchhal/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:d3kuchhal@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/DK3ROX"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Abhay Singh.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Abhay Singh"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Abhay Singh
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/abhaysingh101"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:abhaysingh213662@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/abhaysingh81"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Tanmay Goyal.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Tanmay Goyal"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Tanmay Goyal
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/tanmay-goyal-8467bb2b3/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:tanmayg2607@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/Deathhallow07"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Samar Ali.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Samar Ali"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Samar Ali
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/samar-ali-022540399"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:samarali.01491625@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/samarAli-7"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Aditya Shourya.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Aditya Shourya"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Aditya Shourya
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/aditya-shourya-2719b0377"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:adityashourya317@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/heheimheck"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="center">Avionics Technicians</h3>
+
+                <div class="team-row">
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/amrit.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Amrit Dey"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Amrit Dey
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/amrit-dey-7aa632319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:flamefalcon342516@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/flamefalcon342516"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/abhimanyu.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Abhimanyu Singh"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Abhimanyu Singh
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/abhimanyu-singh-5b0896349/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:abhimanyusingh.2k6@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/anicksenpaii"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/ved.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Vedansh Sachdev"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Vedansh Sachdev
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/vedansh-sachdev-17b556319/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:Vedanshsachdev@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/Vedansh0509"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Aryaman Bhatnagar.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Aryaman Bhatnagar"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Aryaman Bhatnagar
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a
+                                    href="mailto:aryaman.bhatnagar123treamis@gmail.com"
+                                >
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/orgs/UASDTU"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Satvik Agarwal.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Satvik Agarwal"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Satvik Agarwal
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/satvik-agarwal-7394211a9"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:satvikagarwal755@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/botvik155"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Naina Bansal.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Naina Bansal"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Naina Bansal
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/naina-bansal-7015bb366/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:nainabansal287@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/nainabansal287"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Akshit Garg.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Akshit Garg"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Akshit Garg
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/akshit-garg-5372b6287"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:akshit.akg7@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/AkshitGarg16"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Shourya Sharma.webp"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Shourya Sharma"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Shourya Sharma
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/shourya-sharma-6a365a341"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:shouryabanner@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/shourya2111"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Kunwar Rohan.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Kunwar Rohan"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Kunwar Rohan
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:kunwarrohan27042005@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/kunwaar-rohan"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Yuvraj Garg.png"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Yuvraj Garg"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Yuvraj Garg
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com/in/yuvraj-garg-abb3103a0"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:yuvraj.uas.dtu@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/orgs/UASDTU"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Ananay Nimbran.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Ananay Nimbran"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Ananay Nimbran
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:iamananaynimbran@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/orgs/UASDTU"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Reet Kaur Saini.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Reet Kaur Saini"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Reet Kaur Saini
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/reet-kaur-saini-429007370"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:reetkaur2687@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/imatreet"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Aakriti Saxena.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Aakriti Saxena"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Aakriti Saxena
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/aakriti-saxena-58b599382"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:aakritisaxena03783@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/aakritisaxena01"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="center">Airframe Technicians</h3>
+
+                <div class="team-row">
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn">
+                            <img
+                                src="./public/curr-members/Vikrant Rathore.jpg"
+                                alt="Vikrant Rathore"
+                            />
+                            <p>Vikrant Rathore</p>
+                            <div class="socials">
+                                <a
+                                    href="https://www.linkedin.com/in/vikrant-rathore-b4aa18318"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:vikrant.rathore@outlook.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/kreideprinze"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn">
+                            <img
+                                src="./public/curr-members/updesh.jpg"
+                                alt="Updesh Dua"
+                            />
+                            <p>Updesh Dua</p>
+                            <div class="socials">
+                                <a
+                                    href="https://www.linkedin.com/in/updesh-dua-1a2b63387/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:duaupdesh.10@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/UpdeshinglyYours"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Gurvesh Singh.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Gurvesh Singh"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Gurvesh Singh
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/gurvesh-singh-475323378"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:gurveshsingh14@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/orgs/UASDTU"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Varnit Kumar.jpeg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Varnit Kumar"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Varnit Kumar
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/varnit-kumar-b62a27365"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:varnitkumar.dtu.me@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/Victorkilo2469"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Maulik Jain.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Maulik Jain"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Maulik Jain
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://www.linkedin.com/in/maulikjain10"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:maulik0jain@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/maulik0jain"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Harsh Thenua.webp"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Harsh Thenua "
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Harsh Thenua
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:thenuaharsh2006@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/orgs/UASDTU"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box1"
+                        style="width: 20%; min-width: 180px; padding: 0 20px"
+                    >
+                        <div class="ctn" style="transform: translateY(-20%)">
+                            <img
+                                src="./public/curr-members/2026/Surya Parashar.jpg"
+                                height="150"
+                                width="150"
+                                style="
+                                    border-radius: 50%;
+                                    border: 5px solid #ffffff;
+                                "
+                                alt="Surya Parashar"
+                            />
+                            <p
+                                style="
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                "
+                            >
+                                Surya Parashar
+                            </p>
+
+                            <div>
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i class="fab fa-linkedin blued"></i>
+                                </a>
+                                <a href="mailto:parasharuas@gmail.com">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/orgs/UASDTU"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <i
+                                        class="fab fa-github"
+                                        style="color: black"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const main = document.querySelector(".main");
+            const nav = document.querySelector(".transparent");
+            if (main && nav) {
+                const shift = window
+                    .getComputedStyle(nav)
+                    .getPropertyValue("height");
+                main.style.marginTop = shift;
+            }
+            document.title = "Current Members • UAS-DTU";
+        </script>
+
+        <section id="footer">
+            <div
+                id="contact"
+                style="
+                    padding: 0 4rem 0 4rem;
+                    background: black;
+                    position: relative;
+                "
             >
-          </li>
-          <li>
-            <a href="dtc.html"><i class="material-icons">favorite</i> DTC</a>
-          </li>
-          <li>
-            <a href="upcoming_events.html" class="active"
-              ><i class="material-icons">home</i> Upcoming Events</a
-            >
-          </li>
-          <li>
-            <a href="upcoming-projects.html" class="active"
-              ><i class="material-icons">precision_manufacturing</i> Upcoming
-              Projects</a
-            >
-          </li>
-          <li>
-            <a href="solution.html" class="active"
-              ><i class="material-icons">settings</i> Solutions</a
-            >
-          </li>
-          <li>
-            <a href="contact.html"
-              ><i class="material-icons">email</i> Contact Us</a
-            >
-          </li>
-        </ul>
-      </div>
+                <div class="row">
+                    <div class="col l3 m12 s12">
+                        <h4 style="white-space: nowrap">UAS-DTU</h4>
+                        <p class="text">
+                            A team of enthusiastic undergraduates building
+                            indigenous unmanned systems for real-world missions.
+                        </p>
+                        <div class="logos">
+                            <a
+                                href="https://www.facebook.com/uas.dtu/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>
+                            <a
+                                href="https://in.linkedin.com/company/uas-dtu"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/channel/UCmOV4uiBHoHzf5ZrE1z6WQg"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <i class="fab fa-youtube fa-2x"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/uas_dtu/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
 
-      <div class="main">
-        <div class="team-row">
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/arnav.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Arnav Joshi"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                ARNAV JOSHI
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Student Advisor
-              </div>
+                    <div class="col l6 m12 s12" id="g_map">
+                        <h4 class="map">Map help:</h4>
+                        <div style="overflow: hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.027403024808!2d77.11499645105123!3d28.748598782285452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01270184b37d%3A0x31d84edc5468f356!2sUAS+DTU!5e0!3m2!1sen!2sin!4v1516991611933"
+                                frameborder="0"
+                                style="border: 0; width: 50rem; height: 15rem"
+                                allowfullscreen=""
+                                loading="lazy"
+                            ></iframe>
+                        </div>
+                    </div>
 
-              <div>
-                <a
-                  href="http://linkedin.com/in/arnavjoshi04"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:arnavjoshi2004@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/chirag-sehgal"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
+                    <div class="col l3 m12 s12">
+                        <h4>Reach us at:</h4>
+                        <p class="text">
+                            LW2FF1, Delhi Technological University, Delhi -
+                            110042
+                        </p>
+                        <p id="phone1">
+                            <i class="fas fa-phone-alt"></i> +91-98919 59503
+                        </p>
+                        <p><i class="fas fa-phone-alt"></i> +91-96251 48396</p>
+                        <p><i class="fas fa-phone-alt"></i> +91-99996 97291</p>
+                        <p><i class="fas fa-envelope"></i> uasdtu@dtu.ac.in</p>
+                        <p>&copy; 2026 UAS-DTU. All rights reserved.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/chirag.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Chirag Sehgal"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Chirag Sehgal
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Project Manager
-              </div>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/chirag-sehgal-515b36206/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:chiragsehgal224@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/chirag-sehgal"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/AnujJ.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Anuj"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                ANUJ
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Student Advisor
-              </div>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/anuj-0371b31b5/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:ANUJR200850@GMAIL.COM">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/chirag-sehgal"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="center">Executive Team</h3>
-
-        <div class="team-row">
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/Aadib.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Aaditya Bhatia"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Aaditya Bhatia
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Software Head
-              </div>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/aaditya-bhatia/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:aaditya.tec@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/aadi121205"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/elcaption.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Akshat Kaushal"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Akshat Kaushal
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Team Captain
-              </div>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Avionics Head
-              </div>
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/akshat-kaushal-0535082a1/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:akshatkaushal2579@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/akshatyuvi"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/gunmay.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Gunmay Jhingran"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                GUNMAY JHINGRAN
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Vice Captain
-              </div>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Software Head
-              </div>
-
-              <div>
-                <a
-                  href="https://in.linkedin.com/in/gunmay-jhingran-0a86672a1"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:gunmayjhingran29@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/gun29may"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/nishu.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Nishant Chandna"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Nishant Chandna
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Vice Captain
-              </div>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Avionics Head
-              </div>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/nishant-chandna-482881280/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:nishant.chandna.social@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/NishantChandna1403"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/adityashing.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Aditya Vikram Singh"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Aditya Vikram Singh
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Airframe Head
-              </div>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/aditya-vikram-singh-412912235/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:adityavikramsingh2005@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a href="https://github.com/nil" target="_blank" rel="noopener">
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/Saksham Jain.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Saksham Jain"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Saksham Jain
-              </p>
-              <div style="font-size: 17px; color: #777; margin: 4px 0 8px 0">
-                Airframe Head
-              </div>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/saksham-jain-4b875a24a/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:saksham.j3005@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/Saksham3005"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="center">Software Technicians</h3>
-
-        <div class="team-row">
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/vedant.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Vedant Krish Shanker"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Vedant Krish Shanker
-              </p>
-
-              <div>
-                <a
-                  href="https://in.linkedin.com/in/vedant-krish-shanker-9836aa245"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:vedantkrishshanker_se24b03_056@dtu.ac.in">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/VedantK750"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/Vansh.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Vansh Dhama"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Vansh Dhama
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/vansh-dhama-38b1322b2/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-
-                <a href="mailto:vdchords298@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-
-                <a
-                  href="https://github.com/CordieCue"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/ss.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Shivam Sharma"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Shivam Sharma
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/shivam-sharma-b4423b322/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:prahladsharma378@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/JAMMERR26"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Paras Suneel Pandita.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Paras Suneel Pandita"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Paras Suneel Pandita
-              </p>
-
-              <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:pan.paras07@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/paras-o7"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Rohan Kumar.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Rohan Kumar"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Rohan Kumar
-              </p>
-
-              <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:s1rohankumar2608@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/rohan-2608"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Darsh Kuchhal.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Darsh Kuchhal"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Darsh Kuchhal
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/darsh-kuchhal/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:d3kuchhal@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/DK3ROX"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Abhay Singh.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Abhay Singh"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Abhay Singh
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/abhaysingh101"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:abhaysingh213662@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/abhaysingh81"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Tanmay Goyal.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Tanmay Goyal"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Tanmay Goyal
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/tanmay-goyal-8467bb2b3/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:tanmayg2607@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/Deathhallow07"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Samar Ali.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Samar Ali"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Samar Ali
-              </p>
-
-              <div>
-                <a
-                  href="www.linkedin.com/in/samar-ali-022540399"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:samarali.01491625@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/samarAli-7"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Aditya Shourya.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Aditya Shourya"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Aditya Shourya
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/aditya-shourya-2719b0377"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:adityashourya317@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/heheimheck"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="center">Avionics Technicians</h3>
-
-        <div class="team-row">
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/amrit.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Amrit Dey"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Amrit Dey
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/amrit-dey-7aa632319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:flamefalcon342516@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/flamefalcon342516"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/abhimanyu.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Abhimanyu Singh"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Abhimanyu Singh
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/abhimanyu-singh-5b0896349/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:abhimanyusingh.2k6@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/anicksenpaii"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/ved.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Vedansh Sachdev"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Vedansh Sachdev
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/vedansh-sachdev-17b556319/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:Vedanshsachdev@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/Vedansh0509"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Aryaman Bhatnagar.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Aryaman Bhatnagar"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Aryaman Bhatnagar
-              </p>
-
-              <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:aryaman.bhatnagar123treamis@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/orgs/UASDTU"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Satvik Agarwal.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Satvik Agarwal"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Satvik Agarwal
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/satvik-agarwal-7394211a9"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:satvikagarwal755@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/botvik155"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Naina Bansal.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Naina Bansal"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Naina Bansal
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/naina-bansal-7015bb366/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:nainabansal287@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/nainabansal287"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Shourya Sharma.webp"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Shourya Sharma"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Shourya Sharma
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/shourya-sharma-6a365a341"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:shouryabanner@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/shourya2111"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Kunwar Rohan.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Kunwar Rohan"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Kunwar Rohan
-              </p>
-
-              <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:kunwarrohan27042005@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/kunwaar-rohan"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Yuvraj Garg.png"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Yuvraj Garg"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Yuvraj Garg
-              </p>
-
-              <div>
-                <a
-                  href="https://linkedin.com/in/yuvraj-garg-abb3103a0"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:yuvraj.uas.dtu@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/orgs/UASDTU"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Ananay Nimbran.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Ananay Nimbran"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Ananay Nimbran
-              </p>
-
-              <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:iamananaynimbran@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/orgs/UASDTU"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Reet Kaur Saini.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Reet Kaur Saini"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Reet Kaur Saini
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/reet-kaur-saini-429007370"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:reetkaur2687@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/imatreet"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Aakriti Saxena.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Aakriti Saxena"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Aakriti Saxena
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/aakriti-saxena-58b599382"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:aakritisaxena03783@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/aakritisaxena01"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="center">Airframe Technicians</h3>
-
-        <div class="team-row">
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn">
-              <img
-                src="./public/curr-members/Vikrant Rathore.jpg"
-                alt="Vikrant Rathore"
-              />
-              <p>Vikrant Rathore</p>
-              <div class="socials">
-                <a
-                  href="https://www.linkedin.com/in/vikrant-rathore-b4aa18318"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:vikrant.rathore@outlook.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/kreideprinze"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn">
-              <img src="./public/curr-members/updesh.jpg" alt="Updesh Dua" />
-              <p>Updesh Dua</p>
-              <div class="socials">
-                <a
-                  href="https://www.linkedin.com/in/updesh-dua-1a2b63387/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:duaupdesh.10@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/UpdeshinglyYours"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Gurvesh Singh.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Gurvesh Singh"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Gurvesh Singh
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/gurvesh-singh-475323378"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:gurveshsingh14@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/orgs/UASDTU"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Varnit Kumar.jpeg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Varnit Kumar"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Varnit Kumar
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/varnit-kumar-b62a27365"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:varnitkumar.dtu.me@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/Victorkilo2469"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Maulik Jain.jpg"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Maulik Jain"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Maulik Jain
-              </p>
-
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/maulikjain10"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:maulik0jain@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/maulik0jain"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/Harsh Thenua.webp"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Harsh Thenua "
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Harsh Thenua
-              </p>
-
-              <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:thenuaharsh2006@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/orgs/UASDTU"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="box1"
-            style="width: 20%; min-width: 180px; padding: 0 20px"
-          >
-            <div class="ctn" style="transform: translateY(-20%)">
-              <img
-                src="./public/curr-members/2026/"
-                height="150"
-                width="150"
-                style="border-radius: 50%; border: 5px solid #ffffff"
-                alt="Surya Parashar"
-              />
-              <p
-                style="
-                  font-size: 18px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  margin-bottom: 10px;
-                "
-              >
-                Surya Parashar
-              </p>
-
-              <div>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin blued"></i>
-                </a>
-                <a href="mailto:parasharuas@gmail.com">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a
-                  href="https://github.com/orgs/UASDTU"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fab fa-github" style="color: black"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      const main = document.querySelector(".main");
-      const nav = document.querySelector(".transparent");
-      if (main && nav) {
-        const shift = window.getComputedStyle(nav).getPropertyValue("height");
-        main.style.marginTop = shift;
-      }
-      document.title = "Current Members • UAS-DTU";
-    </script>
-
-    <section id="footer">
-      <div
-        id="contact"
-        style="padding: 0 4rem 0 4rem; background: black; position: relative"
-      >
-        <div class="row">
-          <div class="col l3 m12 s12">
-            <h4 style="white-space: nowrap">UAS-DTU</h4>
-            <p class="text">
-              A team of enthusiastic undergraduates building indigenous unmanned
-              systems for real-world missions.
-            </p>
-            <div class="logos">
-              <a
-                href="https://www.facebook.com/uas.dtu/"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="fab fa-facebook-square fa-2x"></i>
-              </a>
-              <a
-                href="https://in.linkedin.com/company/uas-dtu"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCmOV4uiBHoHzf5ZrE1z6WQg"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="fab fa-youtube fa-2x"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/uas_dtu/"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="fab fa-instagram fa-2x"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col l6 m12 s12" id="g_map">
-            <h4 class="map">Map help:</h4>
-            <div style="overflow: hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.027403024808!2d77.11499645105123!3d28.748598782285452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01270184b37d%3A0x31d84edc5468f356!2sUAS+DTU!5e0!3m2!1sen!2sin!4v1516991611933"
-                frameborder="0"
-                style="border: 0; width: 50rem; height: 15rem"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-
-          <div class="col l3 m12 s12">
-            <h4>Reach us at:</h4>
-            <p class="text">
-              LW2FF1, Delhi Technological University, Delhi - 110042
-            </p>
-            <p id="phone1"><i class="fas fa-phone-alt"></i> +91-98919 59503</p>
-            <p><i class="fas fa-phone-alt"></i> +91-96251 48396</p>
-            <p><i class="fas fa-phone-alt"></i> +91-99996 97291</p>
-            <p><i class="fas fa-envelope"></i> uasdtu@dtu.ac.in</p>
-            <p>&copy; 2026 UAS-DTU. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+        </section>
+    </body>
 </html>
